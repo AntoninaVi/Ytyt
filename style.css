@@ -21,20 +21,20 @@ html {
     font-family: "Gilroy", sans-serif;
 }
 .container {
-    max-width: 1400px;
+    max-width: 1160px;
     margin-left: auto;
     margin-right: auto;
 }
-
 .body {
     font-family: "Gilroy";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     color: #22253b;
+    
 }
 .wrapper {
-    background-color: #F9F8FD;
+    background-color: #f9f8fd;
 }
 .button {
     display: inline-flex;
@@ -56,9 +56,9 @@ html {
     content: url(/img/arrow-white.svg);
     margin-left: 12.86px;
 }
-.button:hover{
-    background-color: #38BFF2;
-    transition: ease-in-out 0.3s;
+.button:hover {
+    background-color: #38bff2;
+    transition: background-color 0.3s;
 }
 .title {
     font-style: normal;
@@ -71,33 +71,27 @@ html {
 
 /* Header */
 
-.header-wrapper {
-    padding-top: 12px;
-    padding-bottom: 66px;
-    background-image: url(/img/bg-head.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
 .navigation {
-    display: flex;
-    justify-content: space-between;
-    background-color: #ffffff;
-    border-radius: 75px;
-    padding: 10px 0 10px 0px;
-    margin-bottom: 60.85px;
-}
-.logo {
-    margin-left: 21px;
-    margin-right: 73px;
-}
-.nav-items {
+    position: absolute;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #ffffff;
+    border-radius: 75px;
+    padding: 10px 0 10px 0px;
+    margin-top: 10px;
+    width: 1160px;
+}
+.logo {
+    margin-left: 21px;
+}
+.nav-items {
+    display: flex;
+    align-items: center;
 }
 .nav-item {
+    display: flex;
+    justify-content: space-evenly;
     text-align: left;
     font-style: normal;
     font-weight: normal;
@@ -107,11 +101,28 @@ html {
     text-decoration: none;
     margin-right: 41px;
 }
-.nav-item:nth-child(5) {
+.nav-item:last-child {
     margin-right: 0;
 }
-.nav-item:hover{
-    color: #F15525;
+.nav-item:hover {
+    color: #f15525;
+    transition: ease-in-out 0.3s;
+}
+.nav-sign-in {
+    display: flex;
+    align-items: center;
+}
+.sign-in {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 104.4%;
+    color: #22253b;
+    text-decoration: none;
+    margin-right: 41px;
+}
+.sign-in:hover {
+    color: #f15525;
     transition: ease-in-out 0.3s;
 }
 
@@ -123,21 +134,34 @@ html {
 }
 .button--nav::before {
     content: url(/img/arrow-nav.svg);
-    margin-right: 4px;
     margin-bottom: 4px;
+    margin-right: 4px;
 }
-.button--nav:hover{
-    background: #F15525;
+.button--nav:hover {
+    background: #f15525;
 }
-.header-content {
+
+/* Main */
+.main-wrapper {
+    padding-top: 12px;
+    padding-bottom: 66px;
+    background-image: url(/img/head-bg.png);
+    background-position-x: 60% ;
+    background-repeat: no-repeat;
+    background-size: cover 10%;
+    
+    
+}
+.main-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 110px;
 }
-.header-info {
+.main-info {
     max-width: 638px;
 }
-.header-article {
+.main-article {
     font-weight: 500;
     font-size: 46px;
     line-height: 46px;
@@ -147,7 +171,7 @@ h1 span {
     color: #f15525;
     text-align: center;
 }
-.header-subscription {
+.main-subscription {
     max-width: 365px;
     margin-bottom: 18.47px;
     font-weight: normal;
@@ -155,27 +179,20 @@ h1 span {
     line-height: 23px;
     color: #22253b;
 }
-.button--header {
+.button--main {
     padding: 28px 50px;
 }
-.header-img {
+.main-img {
 }
-/* .header-arrow {
-    margin-right: auto;
-    margin-left: auto;
-    background-color: #ffffff;
-    border-radius: 50%;
-    width: 37px;
-    height: 37px;
-    position: relative;
-    top: 46px;
-    left: 34px;
-}
-.header-arrow img {
-    padding: 12px 12px;
-} */
 
 /* Technologies  */
+.tech-learn-wrapper{
+background-color: #ffffff;
+border-bottom-left-radius: 80px;
+border-bottom-right-radius: 80px;
+padding-top: 70px;
+padding-bottom: 87.5px;
+}
 .technologies {
     margin-top: 53px;
 }
@@ -199,7 +216,7 @@ h1 span {
     margin-bottom: 84px;
 }
 .technologies-content {
-    flex-basis: 467px;
+    flex-basis: 472px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -244,7 +261,10 @@ h1 span {
 }
 /* Learning */
 .learning {
+    background-color: #ffffff;
     margin-bottom: 88px;
+    border-radius: 80px;
+    max-width: 1400px;
 }
 .learning--title {
     margin-bottom: 34px;
@@ -252,6 +272,7 @@ h1 span {
 .learning-cards {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-bottom: 27px;
 }
 .learning-cards:nth-child(3) {
@@ -326,10 +347,11 @@ h1 span {
     justify-content: center;
     box-shadow: 0px 81px 120px -77px rgba(34, 37, 59, 0.04);
     margin-bottom: 26px;
+    max-width: 1160px;
 }
 .process-card {
     background-color: #ffffff;
-    padding: 56px 60px;
+    padding: 56px 30px;
 }
 
 .process-card:first-child {
@@ -343,7 +365,7 @@ h1 span {
 }
 .process-card ul {
     list-style-type: none;
-    padding-right: 60px;
+    padding-right: 50px;
     box-shadow: 11px 0 0 -10px #eaf2f5;
 }
 .process-card:nth-child(3) ul {
@@ -394,6 +416,8 @@ h1 span {
     border-radius: 80px;
     padding: 90px 120px;
     max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .support-content {
     display: inline-flex;
@@ -487,6 +511,7 @@ table {
     width: 1160px;
     border-radius: 30px;
     overflow: hidden;
+    border-spacing: 0;
 }
 
 .table-price {
@@ -499,6 +524,9 @@ table {
 .table-price td,
 .table-price th {
     padding: 10px;
+}
+.table-price td{
+  
 }
 .table-price th {
     text-align: left;
@@ -522,6 +550,7 @@ tr:last-child {
     color: #8e8e8e;
     margin-top: 25px;
     margin-bottom: 33px;
+    margin-left: 50px;
 }
 .price-learn {
     display: flex;
@@ -553,7 +582,7 @@ tr:last-child {
     padding-top: 63px;
     margin-left: auto;
     margin-right: auto;
-    width: 1160px;
+    
 }
 
 .footer-name {
@@ -583,7 +612,7 @@ tr:last-child {
 .social-link:last-child {
     margin-right: 0;
 }
-.social-link:hover{
+.social-link:hover {
     background: #f15525;
     transition: ease-in-out 0.3s;
 }
@@ -615,7 +644,7 @@ tr:last-child {
     color: #22253b;
     margin-bottom: 25px;
 }
-.footer-link:hover{
+.footer-link:hover {
     color: #f15525;
     transition: ease-in-out 0.3s;
 }
@@ -653,7 +682,7 @@ tr:last-child {
     max-width: 1160px;
     border-top: 1px solid #d8d8d8;
 }
-.footer-right{
+.footer-right {
     margin-top: 28px;
     margin-bottom: 32px;
     text-decoration: none;

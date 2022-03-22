@@ -12,60 +12,64 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <header class="header-wrapper">
+<div class="wrapper">
+    <header class="header-wrapper">
+        <div class="container">
+            <nav class="navigation">
+                <div class="logo">
+                    <img src="/img/logo.svg" alt="" class="logo">
+                </div>
+                <div class="nav-items">
+                    <a href="#" class="nav-item">Чему вы научитесь</a>
+                    <a href="#" class="nav-item">Процесс обучения</a>
+                    <a href="#" class="nav-item">Стоимость</a>
+                    <a href="#" class="nav-item">Контакты</a>
+                </div>
+                <div class="nav-sign-in">
+                    <a href="#" class="sign-in">Регистрация</a>
+                    <a class="button button--nav">Войти</a>
+                </div>
+            </nav>
+    </header>
+
+    <main>
+        <div class="main-wrapper">
             <div class="container">
-                <nav class="navigation">
-                    <div class="nav-items">
-                        <img src="/img/logo.svg" alt="" class="logo">
-                        <a href="#" class="nav-item">Чему вы научитесь</a>
-                        <a href="#" class="nav-item">Процесс обучения</a>
-                        <a href="#" class="nav-item">Стоимость</a>
-                        <a href="#" class="nav-item">Контакты</a>
-                    </div>
-                    <div class="nav-actions">
-                        <a href="#" class="nav-item">Регистрация</a>
-                        <button class="button button--nav">Войти</button>
-                    </div>
-                </nav>
-                <div class="header-content">
-                    <div class="header-info">
-                        <h1 class="header-article">Школа <span>{</span>программирования<span>}</span>для тех, кому нужны
+                <div class="main-content">
+                    <div class="main-info">
+                        <h1 class="main-article">Школа <span>{</span>программирования<span>}</span>для тех, кому нужны
                             реальные
                             навыки,
                             а не просто сертификат</h1>
-                        <p class="header-subscription">Пройдите тестирование, чтобы получить доступ к бесплатным вводным
+                        <p class="main-subscription">Пройдите тестирование, чтобы получить доступ к бесплатным вводным
                             урокам</p>
-                        <button class="button button--header">Пройти тестирование</button>
+                        <button class="button button--main">Пройти тестирование</button>
                     </div>
-                    <img src="/img/computer-head.png" alt="computer" class="header-img">
+                    <img src="/img/computer-head.png" alt="computer" class="main-img">
                 </div>
-                <!-- <div class="header-arrow"><img src="/img/arrow-wrap.svg" alt=""></div> -->
             </div>
-        </header>
-
-        
+        </div>
+<div class="tech-learn-wrapper">
+        <div class="container">
         <section class="technologies">
-            <div class="container">
-                <h2 class="title technologies--title">Какие технологии вы изучите:</h2>
-                <div class="technologies-wrapper">
-                    <img src="/img/programmist.png" alt="">
-                    <div class="technologies-content">
-                        <button class="technologies-btn">Язык программирования Python</button>
-                        <button class="technologies-btn">Сети</button>
-                        <button class="technologies-btn">Базы данных</button>
-                        <button class="technologies-btn">Фреймворки Flask и Django</button>
-                        <button class="technologies-btn">Отладка и тестирование</button>
-                        <button class="technologies-btn">Docker</button>
-                        <button class="technologies-btn">Git</button>
-                        <p class="technologies-subscription">Это необходимый минимум для <br> современного
-                            backend-разработчика</p>
-                    </div>
+            <h2 class="title technologies--title">Какие технологии вы изучите:</h2>
+            <div class="technologies-wrapper">
+                <img src="/img/programmist.png" alt="">
+                <div class="technologies-content">
+                    <button class="technologies-btn">Язык программирования Python</button>
+                    <button class="technologies-btn">Сети</button>
+                    <button class="technologies-btn">Базы данных</button>
+                    <button class="technologies-btn">Фреймворки Flask и Django</button>
+                    <button class="technologies-btn">Отладка и тестирование</button>
+                    <button class="technologies-btn">Docker</button>
+                    <button class="technologies-btn">Git</button>
+                    <p class="technologies-subscription">Это необходимый минимум для <br> современного
+                        backend-разработчика</p>
                 </div>
             </div>
         </section>
+        </div>
 
-        
         <div class="container">
             <section class="learning">
                 <h2 class="title learning--title">Обучение в YtYt – это удобно и результативно</h2>
@@ -159,6 +163,7 @@
                 </div>
             </section>
         </div>
+    </div>
 
         <div class="process-wrapper">
             <div class="container">
@@ -180,7 +185,7 @@
                                     <h3 class="process-card-title">Весь материал разбит на небольшие уроки</h3>
                                 </li>
                                 <li>
-                                    <p class="process-card-text">Теория и практика подаются маленькими порциями. 
+                                    <p class="process-card-text">Теория и практика подаются маленькими порциями.
                                         Так<br> вам будет легче усваивать <br> новые знания.</p>
                                 </li>
                             </ul>
@@ -223,7 +228,7 @@
             </div>
         </div>
         <div class="support-wrapper">
-            <div class="container">
+           
                 <section class="support">
                     <div class="support-content">
                         <img src="/img/students.png" alt="students" class="support-img">
@@ -254,7 +259,7 @@
                         <img src="/img/laptop-hands.png" alt="laptop" class="support-img">
                     </div>
                 </section>
-            </div>
+            
         </div>
 
         <div class="price-wrapper">
@@ -270,7 +275,7 @@
                     </div>
                     <div class="price-text">
                         <img src="/img/coin.svg" alt="calculator">
-                        <p class="price-subscription">Любой из блоков вы  можете оплатить в рассрочку
+                        <p class="price-subscription">Любой из блоков вы можете оплатить в рассрочку
                         </p>
                     </div>
                     <div class="price-text">
@@ -341,23 +346,23 @@
                 </div>
             </div>
         </div>
-
-        <footer >
-            <div class="container">
-                <section class="footer-wrapper">
-                    <div class="footer-social">
-                        <div class="footer-name">
-                            <img src="/img/logo.svg" alt="logo" class="footer-logo">
-                            <p class="footer-text">Школа программирования</p>
-                        </div>
-                        <div class="social">
-                            <a href="#" class="social-link"><img src="/img/insta-icon.svg" alt="instagram"></a>
-                            <a href="#" class="social-link"><img src="/img/vk-icon.svg" alt="vk"></a>
-                            <a href="#" class="social-link"><img src="/img/fb-icon.svg" alt="vk"></a>
-                            <a href="#" class="social-link"><img src="/img/yt-icon.svg" alt="vk"></a>
-                        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <section class="footer-wrapper">
+                <div class="footer-social">
+                    <div class="footer-name">
+                        <img src="/img/logo.svg" alt="logo" class="footer-logo">
+                        <p class="footer-text">Школа программирования</p>
                     </div>
-                    <div class="footer-info">
+                    <div class="social">
+                        <a href="#" class="social-link"><img src="/img/insta-icon.svg" alt="instagram"></a>
+                        <a href="#" class="social-link"><img src="/img/vk-icon.svg" alt="vk"></a>
+                        <a href="#" class="social-link"><img src="/img/fb-icon.svg" alt="vk"></a>
+                        <a href="#" class="social-link"><img src="/img/yt-icon.svg" alt="vk"></a>
+                    </div>
+                </div>
+                <div class="footer-info">
                     <div class="footer-links">
                         <a href="#" class="footer-link">Чему вы научитесь</a>
                         <a href="#" class="footer-link">Процесс обучения</a>
@@ -375,21 +380,22 @@
                         </div>
                     </div>
                 </div>
-                </section>
-                <div class="rights">
-                    <p class="footer-right">© 2022 ytyt — Все права защищены</p>
-                    <div class="footer-right-rightside">
-                        <a href="#" class="footer-rights">Пользовательское соглашение</a>
-                        <a href="#" class="footer-rights">Политика конфиденциальности</a>
-                    </div>
+            </section>
+            <div class="rights">
+                <p class="footer-right">© 2022 ytyt — Все права защищены</p>
+                <div class="footer-right-rightside">
+                    <a href="#" class="footer-rights">Пользовательское соглашение</a>
+                    <a href="#" class="footer-rights">Политика конфиденциальности</a>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
 
 
 
 
     </div>
+
 </body>
 
 </html>

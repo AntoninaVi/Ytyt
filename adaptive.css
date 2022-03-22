@@ -107,20 +107,19 @@
     .learning-cards,
     .learning-cards:last-child {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr 1fr;
         gap: 10px;
     }
     .learning-cards:last-child .learning-card:nth-child(3) {
-        max-width: 300px;
+        width: 300px;
+        height: 200px;
         margin-top: 10px;
-    }
-    .learning-cards:first-child {
+        grid-column-start: 1;
+        grid-column-end: 4 ;
     }
     .learning-card:nth-child(1),
     .learning-card:nth-child(2) {
         margin-bottom: 10px;
-    }
-    .card-icon {
     }
     .card-title {
         font-size: 12px;
