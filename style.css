@@ -292,13 +292,13 @@ html {
     border: none;
     cursor: pointer;
 }
-.menu__item-btn::after{
-    content: url(/img/arrow-white.svg);
-    margin-left: 12.86px;
+.menu__item-btn::before{
+    content: url(/img/arrow-burger.svg);
+    margin-right: 9.36px;
 }
 .item-btn{
 position: relative;
-top: 50%;
+top: 60%;
 }
 #menu__toggle:checked ~ .menu__btn span {
     transform: rotate(45deg);
@@ -306,10 +306,12 @@ top: 50%;
 #menu__toggle:checked ~ .menu__btn span::before {
     top: 0;
     transform: rotate(0);
+    background-color: #BCBCBC;
 }
 #menu__toggle:checked ~ .menu__btn span::after {
     top: 0;
     transform: rotate(90deg);
+    background-color: #BCBCBC;
 }
 #menu__toggle:checked ~ .menu__box {
     visibility: visible;
