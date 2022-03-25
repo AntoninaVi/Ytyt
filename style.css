@@ -313,7 +313,6 @@ html {
 .span-prog {
     font-weight: 600;
     font-style: italic;
-
 }
 @media screen and (max-width: 767.9px) {
     .main-article {
@@ -643,7 +642,8 @@ html {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        justify-items: center;
+        justify-items: left;
+        align-items: center;
         margin-bottom: 0;
     }
 }
@@ -663,12 +663,17 @@ html {
     margin-right: 27px;
     background: #eaf2f5;
     border-radius: 30px;
-    max-width: 270px;
+    max-width: 100%;
+    width: 270px;
 }
+.learning-card:nth-child(4) {
+    margin-right: 0;
+}
+
 @media screen and (max-width: 1024px) {
     .learning-card {
         max-width: 200px;
-        margin-right: 0;
+        margin-right: 10px;
     }
     .learning-card:nth-child(4) {
         padding: 10px 0px;
@@ -694,13 +699,24 @@ html {
 }
 @media screen and (max-width: 1024px) {
     .card {
+        max-width: 100%;
         padding: 15px 15px 15px 15px;
     }
 }
+
 .card-icon {
     margin-bottom: 19px;
 }
-
+.learning-card:nth-child(4) .card-icon {
+    margin-bottom: 15px;
+}
+@media screen and (max-width: 1024px) {
+    .card-icon {
+        margin-bottom: 10px;
+        width: 60px;
+        height: 60px;
+    }
+}
 .card-title {
     font-weight: 600;
     font-size: 16px;
@@ -720,13 +736,7 @@ html {
     line-height: 15px;
     color: #22253b;
 }
-@media screen and (max-width: 1024px) {
-    .card-text {
-        max-width: 90%;
-        font-size: 12px;
-        line-height: 13px;
-    }
-}
+
 @media screen and (max-width: 767.9px) {
     .card-text {
         max-width: 100%;
@@ -1331,6 +1341,9 @@ table {
         width: 1160px;
         overflow-x: auto;
     }
+    .table-form {
+        overflow-x: auto;
+    }
 }
 .table-price {
     background-color: #ffffff;
@@ -1342,8 +1355,6 @@ table {
 .table-price td,
 .table-price th {
     padding: 10px;
-}
-.table-price td {
 }
 .table-price th {
     text-align: left;
