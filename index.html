@@ -19,8 +19,8 @@
         <header class="header-wrapper">
             <div class="container">
                 <nav class="navigation">
-                    <div class="logo">
-                        <img src="/img/logo.svg" alt="" class="logo">
+                    <div class="logotype">
+                        <img src="/img/logo.png" alt="" class="logo">
                     </div>
                     <div class="nav-items">
                         <a href="#" class="nav-item">Чему вы научитесь</a>
@@ -54,7 +54,7 @@
                 <div class="container">
                     <div class="main-content">
                         <div class="main-info">
-                            <h1 class="main-article">Школа <span class="quotes">{</span><span
+                            <h1 class="main-title">Школа <span class="quotes">{</span><span
                                     class="span-prog">программирования</span><span class="quotes">}</span> для тех, кому
                                 нужны реальные навыки,
                                 а не просто сертификат</h1>
@@ -72,116 +72,68 @@
                     <section class="technologies">
                         <h2 class="title technologies--title">Какие технологии вы изучите:</h2>
                         <div class="technologies-wrapper">
-                            <img src="/img/programmist.png" alt="">
+                            <img src="/img/programmist.png" alt="programmist" class="technologies-img">
                             <div class="technologies-content">
-                                <button class="technologies-btn">Язык программирования Python</button>
-                                <button class="technologies-btn">Сети</button>
-                                <button class="technologies-btn">Базы данных</button>
-                                <button class="technologies-btn">Фреймворки Flask и Django</button>
-                                <button class="technologies-btn">Отладка и тестирование</button>
-                                <button class="technologies-btn">Docker</button>
-                                <button class="technologies-btn">Git</button>
-                                <p class="technologies-subscription">Это необходимый минимум для <br> современного
-                                    backend-разработчика</p>
+                                <div class="technologies-btn">Язык программирования Python</div>
+                                <div class="technologies-btn">Сети</div>
+                                <div class="technologies-btn">Базы данных</div>
+                                <div class="technologies-btn">Фреймворки Flask и Django</div>
+                                <div class="technologies-btn">Отладка и тестирование</div>
+                                <div class="technologies-btn">Docker</div>
+                                <div class="technologies-btn">Git</div>
+                                <div class="technologies-subscription">Это необходимый минимум для <br> современного
+                                    backend-разработчика</div>
                             </div>
                         </div>
                     </section>
                 </div>
 
-                <div class="container">
-                    <section class="learning">
-                        <h2 class="title learning--title">Обучение в YtYt – это удобно и результативно</h2>
-                        <div class="learning-cards">
-                            <div class="learning-card">
-                                <ul class="card">
-                                    <li><img src="/img/icon1.svg" alt="" class="card-icon"></li>
-                                    <li>
-                                        <h3 class="card-title">Огромное<br>количество практики</h3>
-                                    </li>
-                                    <li>
-                                        <p class="card-text">Более 500 самостоятельных заданий и 20 полноценных больших
-                                            проектов
-                                        </p>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="learning-card">
-                                <ul class="card">
-                                    <li><img src="/img/icon2.svg" alt="" class="card-icon"></li>
-                                    <li>
-                                        <h3 class="card-title">Современные<br> методики обучения</h3>
-                                    </li>
-                                    <li>
-                                        <p class="card-text">Спиральное обучение:
-                                            погружаемся в материал постепенно, виток за витком</p>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="learning-card">
-                                <ul class="card">
-                                    <li><img src="/img/icon3.svg" alt="" class="card-icon"></li>
-                                    <li>
-                                        <h3 class="card-title">Простое и понятное изложение</h3>
-                                    </li>
-                                    <li>
-                                        <p class="card-text">Вместо заумных <br> терминов – примеры из реального мира
-                                        </p>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="learning-card">
-                                <ul class="card">
-                                    <li><img src="/img/icon4.svg" alt="" class="card-icon"></li>
-                                    <li>
-                                        <h3 class="card-title">Гибкий график<br>занятий</h3>
-                                    </li>
-                                    <li>
-                                        <p class="card-text">Учитесь в любое<br> время в удобном <br> для вас темпе</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                <section class="learning">
+                    <h2 class="title learning--title">Обучение в YtYt – это удобно и результативно</h2>
+                    <div class="learning-cards">
+                        <article class="card">
+                            <img src="/img/icon1.svg" alt="icon-code" class="card-icon">
+                            <h3 class="card-title">Огромное количество практики</h3>
+                            <p class="card-subscription">Более 500 самостоятельных заданий и 20 полноценных больших
+                                проектов</p>
+                        </article>
+                        <article class="card">
+                            <img src="/img/icon2.svg" alt="icon-universal" class="card-icon">
+                            <h3 class="card-title">Современные методики обучения</h3>
+                            <p class="card-subscription">Спиральное обучение:
+                                погружаемся в материал постепенно, виток за витком</p>
+                        </article>
+                        <article class="card">
+                            <img src="/img/icon3.svg" alt="icon-universal" class="card-icon">
+                            <h3 class="card-title">Простое и понятное изложение</h3>
+                            <p class="card-subscription">Вместо заумных <br> терминов – примеры <br> из реального мира</p>
+                        </article>
+                        <article class="card">
+                            <img src="/img/icon4.svg" alt="icon-universal" class="card-icon">
+                            <h3 class="card-title">Гибкий график <br> занятий</h3>
+                            <p class="card-subscription">Учитесь в любое <br> время в удобном
+                                <br> для вас темпе</p>
+                        </article>
+                        <article class="card">
+                            <img src="/img/icon5.svg" alt="icon-universal" class="card-icon">
+                            <h3 class="card-title">Прямая связь с опытными программистами</h3>
+                            <p class="card-subscription">Задавайте вопросы и отправляйте свой код на проверку</p>
+                        </article>
+                        <article class="card">
+                            <img src="/img/icon6.svg" alt="icon-universal" class="card-icon">
+                            <h3 class="card-title">Оплата небольшими частями</h3>
+                            <p class="card-subscription">Платите только за тот материал, который сейчас изучаете, а
+                                не за весь курс сразу</p>
+                        </article>
+                        <article class="card">
+                            <img src="/img/icon7.svg" alt="icon-universal" class="card-icon">
+                            <h3 class="card-title">Быстрый и легкий <br> возврат</h3>
+                            <p class="card-subscription">Если передумаете учиться – вернем деньги за 3 <br> рабочих дня
+                            </p>
+                        </article>
+                    </div>
+                </section>
 
-                        <div class="learning-cards">
-                            <div class="learning-card">
-                                <ul class="card">
-                                    <li><img src="/img/icon5.svg" alt="" class="card-icon"></li>
-                                    <li>
-                                        <h3 class="card-title">Прямая связь с опытными программистами</h3>
-                                    </li>
-                                    <li>
-                                        <p class="card-text">Задавайте вопросы
-                                            и отправляйте свой код на проверку</p>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="learning-card">
-                                <ul class="card">
-                                    <li><img src="/img/icon6.svg" alt="" class="card-icon"></li>
-                                    <li>
-                                        <h3 class="card-title">Оплата небольшими частями</h3>
-                                    </li>
-                                    <li>
-                                        <p class="card-text">Платите только за тот материал, который сейчас изучаете,
-                                            а не за весь курс сразу</p>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="learning-card">
-                                <ul class="card">
-                                    <li><img src="/img/icon7.svg" alt="" class="card-icon"></li>
-                                    <li>
-                                        <h3 class="card-title">Быстрый и легкий <br> возврат</h3>
-                                    </li>
-                                    <li>
-                                        <p class="card-text">Если передумаете учиться –
-                                            вернем деньги за 3 <br> рабочих дня</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
-                </div>
             </div>
 
             <div class="process-wrapper">
@@ -255,10 +207,8 @@
                         <img src="/img/students.png" alt="students" class="support-img">
                         <div class="support-text">
                             <h3 class="support-title">Помощь и поддержка</h3>
-                            <p class="support-subscription">Если в процессе обучения возникнут сложности, вы всегда
-                                сможете
-                                задать
-                                вопрос своему наставнику.</p>
+                            <p class="support-subscription">Если в процессе обучения возникнут сложности, вы <br> всегда
+                                сможете задать вопрос своему наставнику.</p>
                             <p class="support-subscription">Раз в несколько уроков вы будете получать большое задание,
                                 которое нужно
                                 будет сдавать на проверку код-ревьюеру. Он внимательно изучит ваш код, найдет ошибки и
@@ -291,8 +241,7 @@
                         <div class="price-text">
                             <img src="/img/calc.svg" alt="calculator">
                             <p class="price-subscription">Весь курс разбит на несколько блоков. Оплата поэтапная вы
-                                платите
-                                только за тот блок, который сейчас проходите.
+                                платите только за тот блок, который сейчас проходите.
                             </p>
                         </div>
                         <div class="price-text">
